@@ -1,0 +1,27 @@
+### INDEX
+GET http://localhost:3000/contacts
+
+### CREATE
+POST http://localhost:3000/contacts.json
+content-type: application/json
+
+{
+  "first_name": "John",
+  "last_name": "Smith",
+  "email": "jsmith@gmail.com",
+  "phone_number": "5555555555"
+}
+
+### SHOW
+GET http://localhost:3000/contacts/1
+
+### UPDATE
+PATCH http://localhost:3000/contacts/1.json
+content-type: application/json
+
+{
+  "first_name": "Test"
+}
+
+### DELETE
+DELETE http://localhost:3000/contacts/4.json
